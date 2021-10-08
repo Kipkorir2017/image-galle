@@ -12,11 +12,17 @@
   {% endif %}
 
   {% block styles %}
+  
     {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
   {% endblock %}
 
 </head>
 <body>
+    {% include "navbar.html" %}
     {% block content %}
     
     {%endblock%}
