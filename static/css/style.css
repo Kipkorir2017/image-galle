@@ -1,9 +1,12 @@
-.introduction{
-    padding-bottom: 30%;
-}
+/* .introduction{
+    /* padding-bottom: 25%; */
 *{
     font-family: 'Lora', serif;
+    
 
+}
+html{
+    overflow: hidden;
 }
 h1{
     color: tomato;
@@ -13,8 +16,13 @@ h1{
     background-color: #080818;
     color: white;
     border-radius: 0%;
-    
-}
+    padding-bottom: 16px;
+    overflow: hidden;
+    /* position: fixed; 
+    top: 0; 
+    width: 100%; */
+} 
+
 
 footer {
     background-color: #080818;
