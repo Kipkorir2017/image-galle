@@ -5,6 +5,9 @@
     font-family: 'Lora', serif;
 
 }
+h1{
+    color: tomato;
+}
 
 .navbar {
     background-color: #080818;
