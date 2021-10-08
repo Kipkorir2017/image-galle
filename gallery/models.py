@@ -5,9 +5,9 @@ class Category(models.Model):
     category_name=models.CharField(max_length=30)
 
 class Location(models.Model):
-    location_name = models.CharField(max_length=100) 
+    location_name = models.CharField(max_length=50) 
 
-    
+
 class Image(models.Model):
     image_name=models.CharField(max_length=50)
     description=models.TextField()
