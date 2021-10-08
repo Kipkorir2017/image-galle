@@ -1,3 +1,6 @@
+.introduction{
+    padding-bottom: 30%;
+}
 *{
     font-family: 'Lora', serif;
 
@@ -16,6 +19,5 @@ footer {
     color: white;
     padding: 20px;
     overflow: hidden;
-    height: 60px;
     width: 100%;
 }
