@@ -1,1 +1,28 @@
-<h1>Welcome to Image-Gallery</h1>
+
+{%extends 'base.html'%}
+
+{% block content %}
+{{block.super}}
+
+
+
+<div id="homepage">
+    <div id="overlay" class="row">
+
+        <div>
+            <h1 class="text-center">Welcome to Image-Gallery</h1>
+            <hr>
+            <p id="about" class="text-center">Find my different kind of images taken from various Loaction in different occassions</p>
+        </div>
+    </div>
+</div>
+<div>
+    <footer class="page-footer">
+            <div style=" font-size:12pt; padding: 1%;">
+                <div class="footer-copyright py-3" style="padding-left: 42%;">&#169;Copyright 2021: Benjamin Kipkorir
+                </div>
+            </div>
+    </footer>
+</div>
+
+{%endblock%}
