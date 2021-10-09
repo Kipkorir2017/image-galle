@@ -37,8 +37,9 @@ class Location(models.Model):
 class Image(models.Model):
     image_name=models.CharField(max_length=50)
     description=models.TextField()
-    category=models.ForeignKey(Category,on_delete=models.CASCADE)
-    location=models.ForeignKey(Location,on_delete=models.CASCADE)
+    category=models.ForeignKey(Category,on_delete=models.CASCADE, default='0')
+    location=models.ForeignKey(Location,on_delete=models.CASCADE, default='0')
+    image=models.ImageField(upload_to='images/', default='0')
  
 
     def __str__(self):
@@ -52,7 +53,7 @@ class Image(models.Model):
 
     @classmethod
     def update_image(cls, id,image):
-        cls.objects.filter(id=id).update(image_name=image)
+        cls.objects.filter(id=id).update(image=image)
 
 
     @classmethod
