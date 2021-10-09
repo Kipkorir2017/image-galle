@@ -64,7 +64,7 @@ class Image(models.Model):
 
     @classmethod
     def fetch_by_location(cls,location_name):
-        location = cls.objects.filter(location__location__name = location_name).all()
+        location = cls.objects.filter(location__location_name = location_name).all()
         return location
 
 
