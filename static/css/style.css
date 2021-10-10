@@ -1,8 +1,11 @@
 
 #homepage{
-    /* width: 100%; */
+    width: 100%; 
     overflow: hidden;
-    padding-top: 5%;
+    padding-top: 3%;
+}
+.container{
+    justify-content:space-around;
 }
 *{
     font-family: 'Lora', serif;
@@ -17,7 +20,7 @@ h1{
     background-color: #080818;
     color: white;
     border-radius: 0%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
    
@@ -26,6 +29,11 @@ h1{
 img{
     
     border:1pt solid #f00;
+  }
+  .img-responsive{
+    height:200px;
+    width: 300px;
+
   }
   
 
@@ -37,3 +45,23 @@ footer {
     overflow: hidden;
     width: 100%;
 }
+
+@media only screen and (min-width: 500px) {
+
+.container {
+    width:100%;
+    
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+/* @media only screen and(max-width:60px){
+    .container{
+        width:100%
+    }
+} */
