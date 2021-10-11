@@ -6,7 +6,7 @@ Benjamin Kipkorir
 An Image-gallery Django web application, where  user can view images from differrent categories,location where image was taken,also user is  able to view and copy link to the photo
 
 ## Live Link
-<a href="">View</a>
+<a href="https://imagegal.herokuapp.com/">View</a>
 
 ## Admin Dashboard
 * Login with credentials
