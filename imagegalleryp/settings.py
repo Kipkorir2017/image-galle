@@ -31,7 +31,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -94,17 +94,17 @@ WSGI_APPLICATION = 'imagegalleryp.wsgi.application'
 # }
 
 MODE=config("MODE", default="dev")
-SECRET_KEY = config('Benjamin')
-DEBUG = os.environ.get('DEBUG', False)
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = os.environ.get('DEBUG', True)
 # development
 if config('MODE')=="dev":
    DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': config('images'),
-           'USER': config('moringa'),
-           'PASSWORD': config('Benja312'),
-           'HOST': config('127.0.0.1'),
+           'NAME': config('DB_NAME'),
+           'USER': config('DB_USER'),
+           'PASSWORD': config('PASSWORD'),
+           'HOST': config('DB_HOST'),
            'PORT': '',
        }
        
