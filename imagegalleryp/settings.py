@@ -94,8 +94,8 @@ WSGI_APPLICATION = 'imagegalleryp.wsgi.application'
 # }
 
 MODE=config("MODE", default="dev")
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+SECRET_KEY = config('Benjamin')
+DEBUG = os.environ.get('DEBUG', False)
 # development
 if config('MODE')=="dev":
    DATABASES = {
