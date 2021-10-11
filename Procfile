@@ -1,1 +1,1 @@
-web: gunicorn yimagegalleryp.wsgi --log-file -
+web: gunicorn imagegalleryp.wsgi --log-file -
